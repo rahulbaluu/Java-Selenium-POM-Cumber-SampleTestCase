@@ -4,19 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import testCase.pages.ProductPage;
-import utilities.DriverSetup;
 
-public class Productpagestepdef {
-	private WebDriver driver;
-	private ProductPage productPage;
+import org.testng.Assert;
 
-	public Productpagestepdef(){
-		this.driver = DriverSetup.getDriver();
-		this.productPage = new ProductPage(driver);
-	}
+public class Productpagestepdef extends BaseStepDef{
+
 
 	@Given("Click on products button")
 	public void clickOnProductsButton() {
@@ -30,7 +22,7 @@ public class Productpagestepdef {
 
 	@And("The products list is visible")
 	public void theProductsListIsVisible() {
-		Assert.assertTrue("All Products heading is not visible!", productPage.verifyAllProducts());
+		Assert.assertTrue(productPage.verifyAllProducts(), "All Products heading is not visible!");
 	}
 
 	@And("Click on View Product of first product")
@@ -62,7 +54,7 @@ public class Productpagestepdef {
 	@Then("Verify that detail detail is visible")
 	public void verifyThatDetailDetailIsVisibleProductNameCategoryPriceAvailabilityConditionBrand() {
 		productPage.areProductDetailsVisible();
-		Assert.assertTrue("Not all product details are visible!", productPage.areProductDetailsVisible());
+		Assert.assertTrue(productPage.areProductDetailsVisible(),"Not all product details are visible!");
 	}
 
 	@When("Verify that categories are visible on left side bar")
@@ -97,8 +89,4 @@ public class Productpagestepdef {
 		Assert.assertTrue(isDisplayed);
 	}
 
-	@Then("Screenshot on every step")
-	public void screenshotOnEveryStep() {
-		productPage.closeProductDetailPage();
-	}
 }

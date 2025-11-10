@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">16 methods, 3 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to different category and sub-category pages&quot;, &quot;Listing and Searching of Product&quot;)">runScenario("Verify navigation to different category and sub-category pages", "Listing and Searching of Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;)">runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Remove Products From Cart&quot;, &quot;Testing the functions in cart&quot;)">runScenario("Remove Products From Cart", "Testing the functions in cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">runScenario("Verify searched product is listed", "Listing and Searching of Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">runScenario("Verify searched product is listed", "Listing and Searching of Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login and Logout with credentials&quot;, &quot;Login and Logout the existing account&quot;)">runScenario("Login and Logout with credentials", "Login and Logout the existing account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;Create, Verify and Delete the created account&quot;)">runScenario("Register User with existing email", "Create, Verify and Delete the created account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login User with incorrect email and password&quot;, &quot;Login and Logout the existing account&quot;)">runScenario("Login User with incorrect email and password", "Login and Logout the existing account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Products in Cart&quot;, &quot;Testing the functions in cart&quot;)">runScenario("Add Products in Cart", "Testing the functions in cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created accou...)">runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created accou...)">runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">runScenario("Verify searched product is listed", "Listing and Searching of Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Subscription in Cart page&quot;, &quot;Testing the functions in cart&quot;)">runScenario("Verify Subscription in Cart page", "Testing the functions in cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Product quantity in Cart&quot;, &quot;Testing the functions in cart&quot;)">runScenario("Verify Product quantity in Cart", "Testing the functions in cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;)">runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify All Products and product detail page&quot;, &quot;Listing and Searching of Product&quot;)">runScenario("Verify All Products and product detail page", "Listing and Searching of Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -104,6 +202,238 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to different category and sub-category pages&quot;, &quot;Listing and Searching of Product&quot;)">
+                  </a> <!-- runScenario("Verify navigation to different category and sub-category pages", "Listing and Searching of Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to different category and sub-category pages","Listing and Searching of Product")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+	at ✽.Verify that category page is displayed and confirm text &apos;WOMEN -  Tops Products&apos;(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;)">
+                  </a> <!-- runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Place Order Register while Checkout","Create, Verify and Delete the created account")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -&gt; link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+	at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+	at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Remove Products From Cart&quot;, &quot;Testing the functions in cart&quot;)">
+                  </a> <!-- runScenario("Remove Products From Cart", "Testing the functions in cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Remove Products From Cart","Testing the functions in cart")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (466, 16). Other element would receive the click: &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -&gt; link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+	at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+	at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">
+                  </a> <!-- runScenario("Verify searched product is listed", "Listing and Searching of Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searched product is listed","Listing and Searching of Product")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">
+                  </a> <!-- runScenario("Verify searched product is listed", "Listing and Searching of Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searched product is listed","Listing and Searching of Product")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login and Logout with credentials&quot;, &quot;Login and Logout the existing account&quot;)">
+                  </a> <!-- runScenario("Login and Logout with credentials", "Login and Logout the existing account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login and Logout with credentials","Login and Logout the existing account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;Create, Verify and Delete the created account&quot;)">
+                  </a> <!-- runScenario("Register User with existing email", "Create, Verify and Delete the created account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register User with existing email","Create, Verify and Delete the created account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login User with incorrect email and password&quot;, &quot;Login and Logout the existing account&quot;)">
+                  </a> <!-- runScenario("Login User with incorrect email and password", "Login and Logout the existing account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login User with incorrect email and password","Login and Logout the existing account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add Products in Cart&quot;, &quot;Testing the functions in cart&quot;)">
+                  </a> <!-- runScenario("Add Products in Cart", "Testing the functions in cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add Products in Cart","Testing the functions in cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created accou...)">
+                  </a> <!-- runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Registering the new user and delete the created user","Create, Verify and Delete the created account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created accou...)">
+                  </a> <!-- runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Registering the new user and delete the created user","Create, Verify and Delete the created account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;)">
+                  </a> <!-- runScenario("Verify searched product is listed", "Listing and Searching of Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searched product is listed","Listing and Searching of Product")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Subscription in Cart page&quot;, &quot;Testing the functions in cart&quot;)">
+                  </a> <!-- runScenario("Verify Subscription in Cart page", "Testing the functions in cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Subscription in Cart page","Testing the functions in cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Product quantity in Cart&quot;, &quot;Testing the functions in cart&quot;)">
+                  </a> <!-- runScenario("Verify Product quantity in Cart", "Testing the functions in cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Product quantity in Cart","Testing the functions in cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;)">
+                  </a> <!-- runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Place Order Register while Checkout","Create, Verify and Delete the created account")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify All Products and product detail page&quot;, &quot;Listing and Searching of Product&quot;)">
+                  </a> <!-- runScenario("Verify All Products and product detail page", "Listing and Searching of Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify All Products and product detail page","Listing and Searching of Product")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -139,6 +469,14 @@
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -155,12 +493,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.TestRunner')
+data.setCell(0, 3, 223970);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.TestRunner')
+data.setCell(1, 3, 22005);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.TestRunner')
+data.setCell(2, 3, 12600);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.TestRunner')
+data.setCell(3, 3, 11325);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.TestRunner')
+data.setCell(4, 3, 8752);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.TestRunner')
+data.setCell(5, 3, 8714);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.TestRunner')
+data.setCell(6, 3, 7998);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.TestRunner')
+data.setCell(7, 3, 7824);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.TestRunner')
+data.setCell(8, 3, 7503);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.TestRunner')
+data.setCell(9, 3, 7397);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.TestRunner')
+data.setCell(10, 3, 7153);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.TestRunner')
+data.setCell(11, 3, 6952);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.TestRunner')
+data.setCell(12, 3, 6741);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.TestRunner')
+data.setCell(13, 3, 6714);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.TestRunner')
+data.setCell(14, 3, 6712);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.TestRunner')
+data.setCell(15, 3, 6252);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -185,6 +587,86 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@1fa796a4)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Subscription in Cart page", "Testing the functions in cart")</span>
+                <span class="method-start">360 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add Products in Cart", "Testing the functions in cart")</span>
+                <span class="method-start">7103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Product quantity in Cart", "Testing the functions in cart")</span>
+                <span class="method-start">15817 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Remove Products From Cart", "Testing the functions in cart")</span>
+                <span class="method-start">23321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login and Logout with credentials", "Login and Logout the existing account")</span>
+                <span class="method-start">31149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login User with incorrect email and password", "Login and Logout the existing account")</span>
+                <span class="method-start">39902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify All Products and product detail page", "Listing and Searching of Product")</span>
+                <span class="method-start">46155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searched product is listed", "Listing and Searching of Product")</span>
+                <span class="method-start">52870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searched product is listed", "Listing and Searching of Product")</span>
+                <span class="method-start">59823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searched product is listed", "Listing and Searching of Product")</span>
+                <span class="method-start">67221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify navigation to different category and sub-category pages", "Listing and Searching of Product")</span>
+                <span class="method-start">75220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...)</span>
+                <span class="method-start">82374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Registering the new user and delete the created user", "Create, Verify and Delete the created accou...)</span>
+                <span class="method-start">94974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register User with existing email", "Create, Verify and Delete the created account")</span>
+                <span class="method-start">106300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account")</span>
+                <span class="method-start">113013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Place Order Register while Checkout", "Create, Verify and Delete the created account")</span>
+                <span class="method-start">336986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">358994 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

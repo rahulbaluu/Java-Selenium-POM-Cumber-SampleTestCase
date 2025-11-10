@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 06 01:43:00 GMT 2025</td>
+<td>Started on:</td><td>Mon Nov 10 00:18:11 GMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (4 ms)</td>
+<tr><td>Total time:</td><td>359 seconds (359082 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,213 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to different category and sub-category pages", "Listing and Searching of Product"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+	at ✽.Verify that category page is displayed and confirm text &apos;WOMEN -  Tops Products&apos;(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252969149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252969149'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+	at ✽.Verify that category page is displayed and confirm text &apos;WOMEN -  Tops Products&apos;(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+</pre></div></td>
+<td>7</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order Register while Checkout", "Create, Verify and Delete the created account"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -&gt; link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+	at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+	at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div><a href='#' onClick='toggleBox("stack-trace768802695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768802695'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -&gt; link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+	at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+	at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>223</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove Products From Cart", "Testing the functions in cart"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (466, 16). Other element would receive the click: &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -&gt; link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+	at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+	at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400324426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1400324426'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (466, 16). Other element would receive the click: &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -&gt; link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+	at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+	at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+</pre></div></td>
+<td>7</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify searched product is listed", "Listing and Searching of Product"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify searched product is listed", "Listing and Searching of Product"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login and Logout with credentials", "Login and Logout the existing account"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Create, Verify and Delete the created account"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with incorrect email and password", "Login and Logout the existing account"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Products in Cart", "Testing the functions in cart"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registering the new user and delete the created user", "Create, Verify and Delete the created account"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registering the new user and delete the created user", "Create, Verify and Delete the created account"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify searched product is listed", "Listing and Searching of Product"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in Cart page", "Testing the functions in cart"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Product quantity in Cart", "Testing the functions in cart"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order Register while Checkout", "Create, Verify and Delete the created account"</td>
+<td></td>
+<td>22</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify All Products and product detail page", "Listing and Searching of Product"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@1139b2f3</td></tr>
+</table><p>
 </body>
 </html>

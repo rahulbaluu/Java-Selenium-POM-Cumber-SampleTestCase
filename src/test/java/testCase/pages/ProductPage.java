@@ -1,19 +1,22 @@
 package testCase.pages;
 
-import org.junit.Assert;
+import constant.CartPageConstant;
+import constant.ProductPageConstant;
+import constant.WaitTimeConstant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
 
 public class ProductPage extends BasePage {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 	public ProductPage(WebDriver driver) {
 		super(driver);
 	}
@@ -31,13 +34,13 @@ public class ProductPage extends BasePage {
 	}
 
 	public boolean verifyAllProducts() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='All Products']")));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
+		WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.allProductText)));
 		return heading.getText().trim().equals("ALL PRODUCTS");
 	}
 
 	public void clickFirstViewProduct() {
-		WebElement viewProductButton = driver.findElement(By.linkText("View Product"));
+		WebElement viewProductButton = driver.findElement(By.linkText(ProductPageConstant.viewProduct));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", viewProductButton);
 		viewProductButton.click();
 	}
@@ -47,15 +50,15 @@ public class ProductPage extends BasePage {
 	}
 
 	public boolean areProductDetailsVisible() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 
 		// Wait and verify visibility of all product detail elements
-		WebElement name = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-information']/h2")));
-		WebElement category = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-information']/p[1]")));
-		WebElement price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-information']//span[1]/span[1]")));
-		WebElement availability = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p/b[text()='Availability:']/parent::p")));
-		WebElement condition = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p/b[text()='Condition:']/parent::p")));
-		WebElement brand = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p/b[text()='Brand:']/parent::p")));
+		WebElement name = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productName)));
+		WebElement category = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productCategory)));
+		WebElement price = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productPrice)));
+		WebElement availability = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productAvailability)));
+		WebElement condition = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productCondition)));
+		WebElement brand = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.productBrand)));
 
 		// Optional: Print values for debugging
 		System.out.println("Name: " + name.getText());
@@ -75,34 +78,34 @@ public class ProductPage extends BasePage {
 	}
 
 	public void enterProductName(String productName) {
-		driver.findElement(By.id("search_product")).sendKeys(productName);
-		driver.findElement(By.id("submit_search")).click();
+		driver.findElement(By.id(ProductPageConstant.productSearchBar)).sendKeys(productName);
+		driver.findElement(By.id(ProductPageConstant.productSearchIcon)).click();
 	}
 
 	public boolean verifyEnterProductIsVisible(String productCategory) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 		WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("//p[text()='" + productCategory + "']")));
 		return product.isDisplayed();
 	}
 
 	public void productToCart() {
-		WebElement addToCartButton = driver.findElement(By.xpath("//a[@data-product-id='1' and normalize-space()='Add to cart']"));
+		WebElement addToCartButton = driver.findElement(By.xpath(ProductPageConstant.productFirstProductCart));
 		addToCartButton.click();
 	}
 
 	public void clickCart(){
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement cart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
+		WebElement cart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(CartPageConstant.viewCart)));
 		cart.click();
 	}
 
 	public void verifyThatCategoriesAreVisible(){
-		WebElement categorySection = driver.findElement(By.cssSelector("div.category-products"));
+		WebElement categorySection = driver.findElement(By.cssSelector(ProductPageConstant.productCategorySection));
 		Assert.assertTrue(categorySection.isDisplayed());
 		// Locate all category names (Women, Men, Kids)
 		List<WebElement> categories = driver.findElements(
-				By.cssSelector("div.category-products .panel-title a"));
+				By.cssSelector(ProductPageConstant.productPagePrice));
 		Assert.assertTrue(categories.size() > 0);
 		System.out.println("Categories found:");
 		for (WebElement cat : categories) {
@@ -116,8 +119,7 @@ public class ProductPage extends BasePage {
 	public void clickOnWomenCategory(String categoryName){
 			// Method to click category dynamically
 			String categoryXPath = String.format(
-					"//div[@class='panel-group category-products']//a[normalize-space()='%s']",
-					categoryName
+					ProductPageConstant.categoryXpath, categoryName
 			);
 
 			WebElement categoryElement = wait.until(
@@ -129,7 +131,7 @@ public class ProductPage extends BasePage {
 	}
 
 	public void clickOnWomenProduct(String subCategoryName){
-		String subCategoryXPath = String.format("//div[@id='Women']//a[normalize-space()='%s']", subCategoryName);
+		String subCategoryXPath = String.format(ProductPageConstant.subCategoryXPath, subCategoryName);
 		WebElement subCategoryElement = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath(subCategoryXPath)));
 		subCategoryElement.click();
@@ -139,7 +141,7 @@ public class ProductPage extends BasePage {
 	public boolean isCategoryPageDisplayed(String expectedCategoryName){
 		// Locate the category title
 		WebElement categoryTitle = wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[@class='title text-center']")));
+				ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductPageConstant.categoryTitle)));
 		String actualCategoryTitle = categoryTitle.getText();
 		System.out.println("Category title: " + actualCategoryTitle);
 		System.out.println("Expected Category title: " + expectedCategoryName);
@@ -148,7 +150,7 @@ public class ProductPage extends BasePage {
 
 	public void onLeftSideBarClickOnAnySubCategory(String subCategoryName, String categoryName) {
 		// Build XPath dynamically based on category and sub-category
-		String categoryXPath = String.format("//a[normalize-space()='%s' and @data-toggle='collapse']", categoryName);
+		String categoryXPath = String.format(ProductPageConstant.categoryXpathDynamic, categoryName);
 		WebElement categoryElement = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath(categoryXPath)));
 		categoryElement.click();
@@ -160,13 +162,9 @@ public class ProductPage extends BasePage {
 		}
 
 		// Wait for sub-category to be clickable
-		String subCategoryXPath = String.format("//div[@id='%s']//a[normalize-space()='%s']", categoryName, subCategoryName);
+		String subCategoryXPath = String.format(ProductPageConstant.subcategoryXpathDynamic, categoryName, subCategoryName);
 		WebElement subCategoryElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(subCategoryXPath)));
 		subCategoryElement.click();
 		System.out.println("Clicked on subcategory '" + subCategoryName + "' under category '" + categoryName + "'");
-	}
-
-	public void closeProductDetailPage() {
-		driver.close();
 	}
 }

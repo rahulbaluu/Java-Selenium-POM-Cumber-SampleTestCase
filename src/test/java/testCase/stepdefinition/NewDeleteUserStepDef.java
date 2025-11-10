@@ -4,35 +4,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import testCase.pages.*;
-import utilities.DriverSetup;
+import utilities.ExcelUtils;
 
+
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class NewDeleteUserStepDef {
-	WebDriver driver;
-	HomePage homePage;
-	SignupLoginPage signupPage;
-	RegistrationPage registrationPage;
-	LoginPage loginPage;
-	ProductPage productPage;
-	CartPage cartPage;
+public class NewDeleteUserStepDef extends BaseStepDef {
 
 	String actualUsername;
 	String actualEmailAddress;
 
-	public NewDeleteUserStepDef() {
-		this.driver = DriverSetup.getDriver();
-		this.homePage = new HomePage(driver);
-		this.signupPage = new SignupLoginPage(driver);
-		this.registrationPage = new RegistrationPage(driver);
-		this.loginPage = new LoginPage(driver);
-		this.productPage = new ProductPage(driver);
-		this.cartPage = new CartPage(driver);
-	}
 	@Given("Click on Signup Login button")
 	public void clickOnSignupLoginButton() {
 		homePage.clickOnSignupButton();
@@ -61,18 +45,6 @@ public class NewDeleteUserStepDef {
 	@And("Verify ENTER ACCOUNT INFORMATION is visible")
 	public void verifyENTERACCOUNTINFORMATIONIsVisible() {
 		registrationPage.verifyTheTextPresent();
-	}
-
-	@And("Enter the details in the Signup form:")
-	public void enterTheDetailsInTheSignupFormAndClickCreateAccountButton(io.cucumber.datatable.DataTable dataTable) {
-		List<Map<String, String>> dataList = dataTable.asMaps(String.class, String.class);
-		Map<String, String> data = dataList.get(0);
-
-		registrationPage.fillRegistrationForm(
-				data.get("password"), data.get("firstName"), data.get("lastName"), data.get("company"),
-				data.get("address1"), data.get("address2"), data.get("country"), data.get("state"),
-				data.get("city"), data.get("zipcode"), data.get("mobileNumber"), data.get("date"), data.get("month"), data.get("year")
-		);
 	}
 
 	@And("Verify ACCOUNT CREATED is visible and click Continue button")
@@ -154,19 +126,6 @@ public class NewDeleteUserStepDef {
 		cartPage.enterDescriptionInCart(comment);
 	}
 
-	@And("Enter payment details:")
-	public void enterPaymentDetails(io.cucumber.datatable.DataTable dataTable) {
-		List<Map<String, String>> dataList = dataTable.asMaps(String.class, String.class);
-		Map<String, String> data = dataList.get(0);
-
-		String nameOnCard = data.get("Name on Card");
-		String cardNumber = data.get("Card Number");
-		String cvc = data.get("CVC");
-		String expMonth = data.get("Expiry Month");
-		String expYear = data.get("Expiry Year");
-
-		cartPage.enterPaymentDetails(nameOnCard, cardNumber, cvc, expMonth, expYear);
-	}
 
 	@And("Click Pay and Confirm Order button")
 	public void clickPayAndConfirmOrderButton() {
@@ -176,5 +135,30 @@ public class NewDeleteUserStepDef {
 	@And("Verify success message {string}")
 	public void verifySuccessMessageYourOrderHasBeenPlacedSuccessfully(String expectedMessage) {
 		cartPage.verifySuccessMessageYourOrder(expectedMessage);
+	}
+
+	@And("Enter the details in the Signup form from given sheetname {string} and rownumber {int}")
+	public void enterTheDetailsInTheSignupFormAndClickCreateAccountButton(String sheetName, int rowNumber) throws IOException {
+		Map<String, String> data = ExcelUtils.getRowData(sheetName, rowNumber);
+
+		registrationPage.fillRegistrationForm(
+				data.get("password"), data.get("first"), data.get("last"), data.get("company"),
+				data.get("address1"), data.get("address2"), data.get("country"), data.get("state"),
+				data.get("city"), data.get("zip"), data.get("mobile"), data.get("date"), data.get("month"), data.get("year")
+		);
+	}
+
+
+	@And("Enter payment details from given Excel Sheet {string} and rowNumber {int}")
+	public void enterPaymentDetailsFromGivenExcelSheetAndRowNumber(String cardSheet, int RowNum) throws IOException {
+		Map<String, String> data = ExcelUtils.getRowData(cardSheet, RowNum);
+
+		String nameOnCard = data.get("Name on Card");
+		String cardNumber = data.get("Card Number");
+		String cvc = data.get("CVC");
+		String expMonth = data.get("Expiry Month");
+		String expYear = data.get("Expiry Year");
+
+		cartPage.enterPaymentDetails(nameOnCard, cardNumber, cvc, expMonth, expYear);
 	}
 }

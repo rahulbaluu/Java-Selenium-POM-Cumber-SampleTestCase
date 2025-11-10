@@ -1,5 +1,7 @@
+@loginLogout
 Feature: Login and Logout the existing account
 
+  @validLogin
   Scenario Outline: Login and Logout with credentials
     Given Click Signup Login button
     When Enter the email "<email>" and password "<password>"
@@ -12,6 +14,7 @@ Feature: Login and Logout the existing account
       | email         | password | expectedOutcome              |
       | 178@gmail.com | 178      | Login as username is visible |
 
+  @invalidLogin
   Scenario Outline: Login User with incorrect email and password
     Given Click Signup Login button
     When Enter the incorrect email "<email>" and password "<password>"

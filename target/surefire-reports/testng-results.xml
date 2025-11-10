@@ -1,11 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="13" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-06T01:43:00 GMT" name="Surefire suite" finished-at="2025-11-06T01:43:00 GMT" duration-ms="4">
+  <suite started-at="2025-11-10T00:18:11 GMT" name="Surefire suite" finished-at="2025-11-10T00:24:10 GMT" duration-ms="359082">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-06T01:43:00 GMT" name="Surefire test" finished-at="2025-11-06T01:43:00 GMT" duration-ms="4">
+    <test started-at="2025-11-10T00:18:11 GMT" name="Surefire test" finished-at="2025-11-10T00:24:10 GMT" duration-ms="359082">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:11 GMT" name="setUpClass" finished-at="2025-11-10T00:18:12 GMT" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1fa796a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:12 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:18 GMT" duration-ms="6741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Subscription in Cart page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:18 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:27 GMT" duration-ms="8714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Products in Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:27 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:34 GMT" duration-ms="7503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Product quantity in Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:34 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:42 GMT" duration-ms="7824" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Remove Products From Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (466, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -> link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (466, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -> link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:42 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:51 GMT" duration-ms="8752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login and Logout with credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout the existing account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:51 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:18:57 GMT" duration-ms="6252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login User with incorrect email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout the existing account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:18:57 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:04 GMT" duration-ms="6714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Products and product detail page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:04 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:11 GMT" duration-ms="6952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:11 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:18 GMT" duration-ms="7397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:18 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:26 GMT" duration-ms="7998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:26 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:34 GMT" duration-ms="7153" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify navigation to different category and sub-category pages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+at ✽.Verify that category page is displayed and confirm text 'WOMEN -  Tops Products'(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:34 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:46 GMT" duration-ms="12600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registering the new user and delete the created user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:46 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:19:57 GMT" duration-ms="11325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registering the new user and delete the created user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:19:57 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:20:04 GMT" duration-ms="6712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register User with existing email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:20:04 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:23:48 GMT" duration-ms="223970" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place Order Register while Checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -> link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -> link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:23:48 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-10T00:24:10 GMT" duration-ms="22005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place Order Register while Checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1139b2f3]" started-at="2025-11-10T00:24:10 GMT" name="tearDownClass" finished-at="2025-11-10T00:24:10 GMT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

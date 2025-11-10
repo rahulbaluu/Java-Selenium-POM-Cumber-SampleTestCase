@@ -1,26 +1,22 @@
 package testCase.stepdefinition;
 
+import constant.URLConstant;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import testCase.pages.BasePage;
-import testCase.pages.HomePage;
 import utilities.DriverSetup;
 
 
-public class Hooks {
-	public static WebDriver driver;
-	public static BasePage basePage;
+public class Hooks extends BaseStepDef {
+
 
 	@Before
 	public void beforeEachScenario() {
 		driver = DriverSetup.getDriver();
-		basePage = new HomePage(driver);
-		basePage.navigateTo("https://www.automationexercise.com");
+		basePage.navigateTo(URLConstant.baseurl);
 		System.out.println("Browser launched before scenario");
 		System.out.println(driver.getTitle());
-		driver.findElement(By.cssSelector("p.fc-button-label")).click();
+		driver.findElement(By.cssSelector(URLConstant.constantButton)).click();
 	}
 
 	@After

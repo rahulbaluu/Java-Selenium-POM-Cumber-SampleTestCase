@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="0.182" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="359.412" tests="16" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/rahulbalashanmugam/Downloads/chromedriver-mac-arm64/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/test-classes:/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/classes:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-java/4.36.0/selenium-java-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-api/4.36.0/selenium-api-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.36.0/selenium-chrome-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.36.0/selenium-chromium-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-json/4.36.0/selenium-json-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.36.0/selenium-manager-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.36.0/selenium-devtools-v138-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v139/4.36.0/selenium-devtools-v139-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v140/4.36.0/selenium-devtools-v140-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.36.0/selenium-edge-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.36.0/selenium-firefox-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-http/4.36.0/selenium-http-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.36.0/selenium-ie-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.36.0/selenium-remote-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-api/1.54.0/opentelemetry-api-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-context/1.54.0/opentelemetry-context-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-common/1.54.0/opentelemetry-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.54.0/opentelemetry-exporter-logging-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.54.0/opentelemetry-sdk-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.54.0/opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.54.0/opentelemetry-sdk-extension-autoconfigure-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.54.0/opentelemetry-sdk-trace-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.54.0/opentelemetry-sdk-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.54.0/opentelemetry-sdk-metrics-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.54.0/opentelemetry-sdk-logs-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-os/4.36.0/selenium-os-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.36.0/selenium-safari-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-support/4.36.0/selenium-support-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/github/bonigarcia/webdrivermanager/6.2.0/webdrivermanager-6.2.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java/3.5.3/docker-java-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-core/3.5.3/docker-java-core-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-api/3.5.3/docker-java-api-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.4/jackson-annotations-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.4/jackson-databind-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.4/jackson-core-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.3/docker-java-transport-httpclient5-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport/3.5.3/docker-java-transport-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/rahulbalashanmugam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-java/7.29.0/cucumber-java-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-core/7.29.0/cucumber-core-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin/7.29.0/cucumber-gherkin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.29.0/cucumber-gherkin-messages-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/gherkin/35.1.0/gherkin-35.1.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/assertj/assertj-core/3.27.5/assertj-core-3.27.5.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/messages/29.0.1/messages-29.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/pretty-formatter/2.3.0/pretty-formatter-2.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/query/14.6.0/query-14.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/teamcity-formatter/0.1.1/teamcity-formatter-0.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/testng-xml-formatter/0.6.0/testng-xml-formatter-0.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-json-formatter/0.2.1/cucumber-json-formatter-0.2.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/datatable/7.29.0/datatable-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-plugin/7.29.0/cucumber-plugin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/docstring/7.29.0/docstring-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/html-formatter/21.15.1/html-formatter-21.15.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/junit-xml-formatter/0.9.0/junit-xml-formatter-0.9.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-junit/7.28.2/cucumber-junit-7.28.2.jar:/Users/rahulbalashanmugam/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-picocontainer/7.29.0/cucumber-picocontainer-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:"/>
+    <property name="java.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/test-classes:/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/classes:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-java/4.36.0/selenium-java-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-api/4.36.0/selenium-api-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.36.0/selenium-chrome-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.36.0/selenium-chromium-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-json/4.36.0/selenium-json-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.36.0/selenium-manager-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.36.0/selenium-devtools-v138-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v139/4.36.0/selenium-devtools-v139-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v140/4.36.0/selenium-devtools-v140-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.36.0/selenium-edge-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.36.0/selenium-firefox-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-http/4.36.0/selenium-http-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.36.0/selenium-ie-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.36.0/selenium-remote-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-api/1.54.0/opentelemetry-api-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-context/1.54.0/opentelemetry-context-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-common/1.54.0/opentelemetry-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.54.0/opentelemetry-exporter-logging-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.54.0/opentelemetry-sdk-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.54.0/opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.54.0/opentelemetry-sdk-extension-autoconfigure-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.54.0/opentelemetry-sdk-trace-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.54.0/opentelemetry-sdk-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.54.0/opentelemetry-sdk-metrics-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.54.0/opentelemetry-sdk-logs-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-os/4.36.0/selenium-os-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.36.0/selenium-safari-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-support/4.36.0/selenium-support-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/github/bonigarcia/webdrivermanager/6.2.0/webdrivermanager-6.2.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java/3.5.3/docker-java-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-core/3.5.3/docker-java-core-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-api/3.5.3/docker-java-api-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.4/jackson-annotations-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.4/jackson-databind-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.4/jackson-core-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.3/docker-java-transport-httpclient5-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport/3.5.3/docker-java-transport-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-testng/7.29.0/cucumber-testng-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-core/7.29.0/cucumber-core-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin/7.29.0/cucumber-gherkin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.29.0/cucumber-gherkin-messages-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/gherkin/35.1.0/gherkin-35.1.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/assertj/assertj-core/3.27.5/assertj-core-3.27.5.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/messages/29.0.1/messages-29.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/pretty-formatter/2.3.0/pretty-formatter-2.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/query/14.6.0/query-14.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/teamcity-formatter/0.1.1/teamcity-formatter-0.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/testng-xml-formatter/0.6.0/testng-xml-formatter-0.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-json-formatter/0.2.1/cucumber-json-formatter-0.2.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/datatable/7.29.0/datatable-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-plugin/7.29.0/cucumber-plugin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/docstring/7.29.0/docstring-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/html-formatter/21.15.1/html-formatter-21.15.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/junit-xml-formatter/0.9.0/junit-xml-formatter-0.9.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/rahulbalashanmugam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-java/7.29.0/cucumber-java-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-picocontainer/7.29.0/cucumber-picocontainer-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi-ooxml/5.4.0/poi-ooxml-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi/5.4.0/poi-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi-ooxml-lite/5.4.0/poi-ooxml-lite-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.1/allure-cucumber7-jvm-2.29.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-java-commons/2.29.1/allure-java-commons-2.29.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-model/2.29.1/allure-model-2.29.1.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -13,10 +14,11 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire/surefirebooter-20251106014300633_3.jar /Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire 2025-11-06T01-43-00_596-jvmRun1 surefire-20251106014300633_1tmp surefire_0-20251106014300633_2tmp"/>
+    <property name="sun.java.command" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire/surefirebooter-20251110001811215_3.jar /Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire 2025-11-10T00-18-11_164-jvmRun1 surefire-20251110001811215_1tmp surefire_0-20251110001811215_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/test-classes:/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/classes:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-java/4.36.0/selenium-java-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-api/4.36.0/selenium-api-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.36.0/selenium-chrome-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.36.0/selenium-chromium-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-json/4.36.0/selenium-json-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.36.0/selenium-manager-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.36.0/selenium-devtools-v138-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v139/4.36.0/selenium-devtools-v139-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v140/4.36.0/selenium-devtools-v140-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.36.0/selenium-edge-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.36.0/selenium-firefox-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-http/4.36.0/selenium-http-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.36.0/selenium-ie-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.36.0/selenium-remote-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-api/1.54.0/opentelemetry-api-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-context/1.54.0/opentelemetry-context-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-common/1.54.0/opentelemetry-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.54.0/opentelemetry-exporter-logging-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.54.0/opentelemetry-sdk-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.54.0/opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.54.0/opentelemetry-sdk-extension-autoconfigure-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.54.0/opentelemetry-sdk-trace-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.54.0/opentelemetry-sdk-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.54.0/opentelemetry-sdk-metrics-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.54.0/opentelemetry-sdk-logs-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-os/4.36.0/selenium-os-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.36.0/selenium-safari-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-support/4.36.0/selenium-support-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/github/bonigarcia/webdrivermanager/6.2.0/webdrivermanager-6.2.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java/3.5.3/docker-java-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-core/3.5.3/docker-java-core-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-api/3.5.3/docker-java-api-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.4/jackson-annotations-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.4/jackson-databind-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.4/jackson-core-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.3/docker-java-transport-httpclient5-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport/3.5.3/docker-java-transport-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/rahulbalashanmugam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-java/7.29.0/cucumber-java-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-core/7.29.0/cucumber-core-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin/7.29.0/cucumber-gherkin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.29.0/cucumber-gherkin-messages-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/gherkin/35.1.0/gherkin-35.1.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/assertj/assertj-core/3.27.5/assertj-core-3.27.5.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/messages/29.0.1/messages-29.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/pretty-formatter/2.3.0/pretty-formatter-2.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/query/14.6.0/query-14.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/teamcity-formatter/0.1.1/teamcity-formatter-0.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/testng-xml-formatter/0.6.0/testng-xml-formatter-0.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-json-formatter/0.2.1/cucumber-json-formatter-0.2.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/datatable/7.29.0/datatable-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-plugin/7.29.0/cucumber-plugin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/docstring/7.29.0/docstring-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/html-formatter/21.15.1/html-formatter-21.15.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/junit-xml-formatter/0.9.0/junit-xml-formatter-0.9.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-junit/7.28.2/cucumber-junit-7.28.2.jar:/Users/rahulbalashanmugam/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-picocontainer/7.29.0/cucumber-picocontainer-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/test-classes:/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/classes:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-java/4.36.0/selenium-java-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-api/4.36.0/selenium-api-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.36.0/selenium-chrome-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.36.0/selenium-chromium-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-json/4.36.0/selenium-json-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.36.0/selenium-manager-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.36.0/selenium-devtools-v138-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v139/4.36.0/selenium-devtools-v139-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v140/4.36.0/selenium-devtools-v140-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.36.0/selenium-edge-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.36.0/selenium-firefox-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-http/4.36.0/selenium-http-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.36.0/selenium-ie-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.36.0/selenium-remote-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-api/1.54.0/opentelemetry-api-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-context/1.54.0/opentelemetry-context-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-common/1.54.0/opentelemetry-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.54.0/opentelemetry-exporter-logging-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.54.0/opentelemetry-sdk-common-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.54.0/opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.54.0/opentelemetry-sdk-extension-autoconfigure-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.54.0/opentelemetry-sdk-trace-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.54.0/opentelemetry-sdk-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.54.0/opentelemetry-sdk-metrics-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.54.0/opentelemetry-sdk-logs-1.54.0.jar:/Users/rahulbalashanmugam/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-os/4.36.0/selenium-os-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.36.0/selenium-safari-driver-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/seleniumhq/selenium/selenium-support/4.36.0/selenium-support-4.36.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/github/bonigarcia/webdrivermanager/6.2.0/webdrivermanager-6.2.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java/3.5.3/docker-java-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-core/3.5.3/docker-java-core-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-api/3.5.3/docker-java-api-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.4/jackson-annotations-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.4/jackson-databind-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.4/jackson-core-2.18.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.3/docker-java-transport-httpclient5-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/docker-java/docker-java-transport/3.5.3/docker-java-transport-3.5.3.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/rahulbalashanmugam/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/rahulbalashanmugam/.m2/repository/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-testng/7.29.0/cucumber-testng-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-core/7.29.0/cucumber-core-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin/7.29.0/cucumber-gherkin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.29.0/cucumber-gherkin-messages-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/gherkin/35.1.0/gherkin-35.1.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/assertj/assertj-core/3.27.5/assertj-core-3.27.5.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/messages/29.0.1/messages-29.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/pretty-formatter/2.3.0/pretty-formatter-2.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/query/14.6.0/query-14.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/teamcity-formatter/0.1.1/teamcity-formatter-0.1.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/testng-xml-formatter/0.6.0/testng-xml-formatter-0.6.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-json-formatter/0.2.1/cucumber-json-formatter-0.2.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/datatable/7.29.0/datatable-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-plugin/7.29.0/cucumber-plugin-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/docstring/7.29.0/docstring-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/html-formatter/21.15.1/html-formatter-21.15.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/junit-xml-formatter/0.9.0/junit-xml-formatter-0.9.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/rahulbalashanmugam/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/rahulbalashanmugam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-java/7.29.0/cucumber-java-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/io/cucumber/cucumber-picocontainer/7.29.0/cucumber-picocontainer-7.29.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi-ooxml/5.4.0/poi-ooxml-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi/5.4.0/poi-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/rahulbalashanmugam/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/poi/poi-ooxml-lite/5.4.0/poi-ooxml-lite-5.4.0.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar:/Users/rahulbalashanmugam/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/rahulbalashanmugam/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/rahulbalashanmugam/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.1/allure-cucumber7-jvm-2.29.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-java-commons/2.29.1/allure-java-commons-2.29.1.jar:/Users/rahulbalashanmugam/.m2/repository/io/qameta/allure/allure-model/2.29.1/allure-model-2.29.1.jar:"/>
+    <property name="allure.results.directory" value="target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/rahulbalashanmugam"/>
     <property name="user.language" value="en"/>
@@ -30,14 +32,14 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire/surefirebooter-20251106014300633_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/target/surefire/surefirebooter-20251110001811215_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
     <property name="user.name" value="rahulbalashanmugam"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="26.0.1"/>
+    <property name="os.version" value="26.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -59,4 +61,527 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
+  <testcase name="runScenario[&quot;Verify Subscription in Cart page&quot;, &quot;Testing the functions in cart&quot;](1)" classname="runners.TestRunner" time="6.744">
+    <system-out><![CDATA[
+@cart @subscription
+Scenario Outline: Verify Subscription in Cart page                                  # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:14
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click Cart button                                                         # testCase.stepdefinition.CartStepDef.clickCartButton()
+  ✔ When Scroll down to footer                                                      # testCase.stepdefinition.CartStepDef.scrollDownToFooter()
+Found subscription text: SUBSCRIPTION
+  ✔ And Verify text 'SUBSCRIPTION'                                                  # testCase.stepdefinition.CartStepDef.verifyTextSUBSCRIPTION(java.lang.String)
+  ✔ And Enter email "178@gmail" in input and click arrow button                     # testCase.stepdefinition.CartStepDef.enterEmailAddressInInputAndClickArrowButton(java.lang.String)
+Success message is visible: You have been successfully subscribed!
+  ✔ Then Verify success message 'You have been successfully subscribed!' is visible # testCase.stepdefinition.CartStepDef.verifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Nov 10, 2025 12:18:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add Products in Cart&quot;, &quot;Testing the functions in cart&quot;](2)" classname="runners.TestRunner" time="8.703">
+    <system-out><![CDATA[
+@cart @addProductInCart
+Scenario: Add Products in Cart                          # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:17
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click products button                         # testCase.stepdefinition.CartStepDef.clickProductsButton()
+  ✔ When Hover over first product and click add to cart # testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart()
+  ✔ And Click Continue Shopping button                  # testCase.stepdefinition.CartStepDef.clickContinueShoppingButton()
+  ✔ And Hover over second product and click add to cart # testCase.stepdefinition.CartStepDef.hoverOverSecondProductAndClickAddToCart()
+  ✔ And Click view Cart link                            # testCase.stepdefinition.CartStepDef.clickViewCartLink()
+Both products are successfully present in the cart.
+  ✔ And Verify both products are added to Cart          # testCase.stepdefinition.CartStepDef.verifyBothProductsAreAddedToCart()
+Product product-1 has correct price, quantity, and total.
+Product product-2 has correct price, quantity, and total.
+  ✔ Then Verify their prices, quantity and total price  # testCase.stepdefinition.CartStepDef.verifyTheirPricesQuantityAndTotalPrice()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Product quantity in Cart&quot;, &quot;Testing the functions in cart&quot;](3)" classname="runners.TestRunner" time="7.502">
+    <system-out><![CDATA[
+@cart @increaseQuantity
+Scenario Outline: Verify Product quantity in Cart                          # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:36
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click view Product for any product on home page                  # testCase.stepdefinition.CartStepDef.clickViewProductForAnyProductOnHomePage()
+We are on the product page!
+  ✔ When Verify product detail is opened                                   # testCase.stepdefinition.CartStepDef.verifyProductDetailIsOpened()
+  ✔ And Increase quantity to "4"                                           # testCase.stepdefinition.CartStepDef.increaseQuantityTo(java.lang.String)
+  ✔ And Click on add to cart button                                        # testCase.stepdefinition.CartStepDef.clickOnAddToCartButton()
+Verified: Product quantity is 4
+  ✔ Then Verify that product is displayed in cart page with exact quantity # testCase.stepdefinition.CartStepDef.verifyThatProductIsDisplayedInCartPageWithExactQuantity()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Remove Products From Cart&quot;, &quot;Testing the functions in cart&quot;](4)" classname="runners.TestRunner" time="7.829">
+    <failure message="element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (466, 16). Other element would receive the click: &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=142.0.7444.60)&#10;Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -&gt; link text: Add to cart]&#10;Session ID: c72962de065e0487d7d1bcf0469f901d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (466, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -> link text: Add to cart]
+Session ID: c72962de065e0487d7d1bcf0469f901d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+	at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+	at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+]]></failure>
+    <system-out><![CDATA[
+@cart @removeProduct
+Scenario: Remove Products From Cart                        # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:39
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click products button                            # testCase.stepdefinition.CartStepDef.clickProductsButton()
+  ✘ When Hover over first product and click add to cart    # testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart()
+        org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (466, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+          (Session info: chrome=142.0.7444.60)
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [c72962de065e0487d7d1bcf0469f901d, clickElement {id=f.D64CBC5385A2D082FFACDD59427CB155.d.27D8ECA600BFA4FEB2F06E3AB508F285.e.340}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on mac (c72962de065e0487d7d1bcf0469f901d)] -> link text: Add to cart]
+        Session ID: c72962de065e0487d7d1bcf0469f901d
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at testCase.pages.CartPage.hoverOverFirstProductAddToCart(CartPage.java:72)
+        	at testCase.stepdefinition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:53)
+        	at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/cart.feature:41)
+  ↷ And Click Continue Shopping button                     # testCase.stepdefinition.CartStepDef.clickContinueShoppingButton()
+  ↷ And Hover over second product and click add to cart    # testCase.stepdefinition.CartStepDef.hoverOverSecondProductAndClickAddToCart()
+  ↷ And Click view Cart link                               # testCase.stepdefinition.CartStepDef.clickViewCartLink()
+  ↷ And Verify cart page is displayed                      # testCase.stepdefinition.CartStepDef.verifyCartPageIsDisplayed()
+  ↷ And Click X button corresponding to particular product # testCase.stepdefinition.CartStepDef.clickXButtonCorrespondingToParticularProduct()
+  ↷ Then Verify that product is removed from the cart      # testCase.stepdefinition.CartStepDef.verifyThatProductIsRemovedFromTheCart()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login and Logout with credentials&quot;, &quot;Login and Logout the existing account&quot;](5)" classname="runners.TestRunner" time="8.75">
+    <system-out><![CDATA[
+@loginLogout @validLogin
+Scenario Outline: Login and Logout with credentials         # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/loginlogout.feature:15
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click Signup Login button                         # testCase.stepdefinition.LoginLogoutStepDef.clickSignupLoginButton()
+  ✔ When Enter the email "178@gmail.com" and password "178" # testCase.stepdefinition.LoginLogoutStepDef.enterTheCorrectEmailAndPassword(java.lang.String,java.lang.String)
+  ✔ And Click the login button                              # testCase.stepdefinition.LoginLogoutStepDef.clickTheLoginButton()
+Username mismatch. Expected: Login as username is visible, Found: 178
+  ✔ And Verify "Login as username is visible"               # testCase.stepdefinition.LoginLogoutStepDef.verifyLoginAsUsernameIsVisible(java.lang.String)
+  ✔ And Click the Logout button                             # testCase.stepdefinition.LoginLogoutStepDef.clickTheLogoutButton()
+Automation Exercise - Signup / Login
+Login/Signup Page Visible Successfully
+  ✔ Then Verify it is navigated to the login page           # testCase.stepdefinition.LoginLogoutStepDef.verifyItIsNavigatedToTheLoginPage()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login User with incorrect email and password&quot;, &quot;Login and Logout the existing account&quot;](6)" classname="runners.TestRunner" time="6.252">
+    <system-out><![CDATA[
+@loginLogout @invalidLogin
+Scenario Outline: Login User with incorrect email and password          # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/loginlogout.feature:26
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click Signup Login button                                     # testCase.stepdefinition.LoginLogoutStepDef.clickSignupLoginButton()
+  ✔ When Enter the incorrect email "178@gmail.com" and password "171"   # testCase.stepdefinition.LoginLogoutStepDef.enterTheIncorrectEmailAndPassword(java.lang.String,java.lang.String)
+  ✔ And Click the login button                                          # testCase.stepdefinition.LoginLogoutStepDef.clickTheLoginButton()
+Actual error message on page: Your email or password is incorrect!
+Expected error message: Your email or password is incorrect!
+  ✔ Then Verify error "Your email or password is incorrect!" is visible # testCase.stepdefinition.LoginLogoutStepDef.verifyErrorYourEmailOrPasswordIsIncorrectIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify All Products and product detail page&quot;, &quot;Listing and Searching of Product&quot;](7)" classname="runners.TestRunner" time="6.713">
+    <system-out><![CDATA[
+@product @allProduct
+Scenario: Verify All Products and product detail page               # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:5
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on products button                                  # testCase.stepdefinition.Productpagestepdef.clickOnProductsButton()
+User is in product pageAutomation Exercise - All Products
+  ✔ When Verify user is navigated to All Products page successfully # testCase.stepdefinition.Productpagestepdef.verifyUserIsNavigatedToAllProductsPageSuccessfully()
+  ✔ And The products list is visible                                # testCase.stepdefinition.Productpagestepdef.theProductsListIsVisible()
+  ✔ And Click on View Product of first product                      # testCase.stepdefinition.Productpagestepdef.clickOnViewProductOfFirstProduct()
+Automation Exercise - Product Details
+  ✔ And User is landed to product detail page                       # testCase.stepdefinition.Productpagestepdef.userIsLandedToProductDetailPage()
+Name: Blue Top
+Category: Category: Women > Tops
+Price: Rs. 500
+Availability: Availability: In Stock
+Condition: Condition: New
+Brand: Brand: Polo
+Name: Blue Top
+Category: Category: Women > Tops
+Price: Rs. 500
+Availability: Availability: In Stock
+Condition: Condition: New
+Brand: Brand: Polo
+  ✔ Then Verify that detail detail is visible                       # testCase.stepdefinition.Productpagestepdef.verifyThatDetailDetailIsVisibleProductNameCategoryPriceAvailabilityConditionBrand()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:18:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;](8)" classname="runners.TestRunner" time="6.952">
+    <system-out><![CDATA[
+@product @searchProduct
+Scenario Outline: Verify searched product is listed                      # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:22
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on products button                                       # testCase.stepdefinition.Productpagestepdef.clickOnProductsButton()
+User is in product pageAutomation Exercise - All Products
+  ✔ When Verify user is navigated to All Products page successfully      # testCase.stepdefinition.Productpagestepdef.verifyUserIsNavigatedToAllProductsPageSuccessfully()
+  ✔ And Enter product "Blue Top" in search input and click search button # testCase.stepdefinition.Productpagestepdef.enterProductNameInSearchInputAndClickSearchButton(java.lang.String)
+Product 'Blue Top' is visible
+  ✔ Then Verify "Blue Top" is visible                                    # testCase.stepdefinition.Productpagestepdef.verifySearchedProductIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;](9)" classname="runners.TestRunner" time="7.398">
+    <system-out><![CDATA[
+@product @searchProduct
+Scenario Outline: Verify searched product is listed                        # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:23
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on products button                                         # testCase.stepdefinition.Productpagestepdef.clickOnProductsButton()
+User is in product pageAutomation Exercise - All Products
+  ✔ When Verify user is navigated to All Products page successfully        # testCase.stepdefinition.Productpagestepdef.verifyUserIsNavigatedToAllProductsPageSuccessfully()
+  ✔ And Enter product "Winter Top" in search input and click search button # testCase.stepdefinition.Productpagestepdef.enterProductNameInSearchInputAndClickSearchButton(java.lang.String)
+Product 'Winter Top' is visible
+  ✔ Then Verify "Winter Top" is visible                                    # testCase.stepdefinition.Productpagestepdef.verifySearchedProductIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify searched product is listed&quot;, &quot;Listing and Searching of Product&quot;](10)" classname="runners.TestRunner" time="7.998">
+    <system-out><![CDATA[
+@product @searchProduct
+Scenario Outline: Verify searched product is listed                                         # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:24
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on products button                                                          # testCase.stepdefinition.Productpagestepdef.clickOnProductsButton()
+User is in product pageAutomation Exercise - All Products
+  ✔ When Verify user is navigated to All Products page successfully                         # testCase.stepdefinition.Productpagestepdef.verifyUserIsNavigatedToAllProductsPageSuccessfully()
+  ✔ And Enter product "Sleeves Printed Top - White" in search input and click search button # testCase.stepdefinition.Productpagestepdef.enterProductNameInSearchInputAndClickSearchButton(java.lang.String)
+Product 'Sleeves Printed Top - White' is visible
+  ✔ Then Verify "Sleeves Printed Top - White" is visible                                    # testCase.stepdefinition.Productpagestepdef.verifySearchedProductIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify navigation to different category and sub-category pages&quot;, &quot;Listing and Searching of Product&quot;](11)" classname="runners.TestRunner" time="7.153">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+	at ✽.Verify that category page is displayed and confirm text 'WOMEN -  Tops Products'(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+]]></failure>
+    <system-out><![CDATA[
+@product @categoryNavigation
+Scenario Outline: Verify navigation to different category and sub-category pages         # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:38
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on products button                                                       # testCase.stepdefinition.Productpagestepdef.clickOnProductsButton()
+Categories found:
+ - WOMEN
+ - MEN
+ - KIDS
+Categories are visible on the left sidebar.
+  ✔ When Verify that categories are visible on left side bar                             # testCase.stepdefinition.Productpagestepdef.verifyThatCategoriesAreVisibleOnLeftSideBar()
+Clicked on category: Women
+  ✔ And Click on 'Women' category                                                        # testCase.stepdefinition.Productpagestepdef.clickOnWomenCategory(java.lang.String)
+ Clicked on subcategory under Women: Tops
+  ✔ And Click on 'Tops' category link under Women category                               # testCase.stepdefinition.Productpagestepdef.clickOnAnyCategoryLinkUnderWomenCategory(java.lang.String)
+Category title: WOMEN - TOPS PRODUCTS
+Expected Category title: WOMEN -  Tops Products
+  ✘ And Verify that category page is displayed and confirm text 'WOMEN -  Tops Products' # testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(java.lang.String)
+        java.lang.AssertionError: expected [true] but found [false]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertTrue(Assert.java:57)
+        	at org.testng.Assert.assertTrue(Assert.java:67)
+        	at testCase.stepdefinition.Productpagestepdef.verifyThatCategoryPageIsDisplayedAndConfirmTextWOMENTOPSPRODUCTS(Productpagestepdef.java:78)
+        	at ✽.Verify that category page is displayed and confirm text 'WOMEN -  Tops Products'(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/productpage.feature:32)
+  ↷ And On left side bar, click on 'Jeans' sub-category link of 'Men' category           # testCase.stepdefinition.Productpagestepdef.onLeftSideBarClickOnAnySubCategoryLinkOfMenCategory(java.lang.String,java.lang.String)
+  ↷ Then Verify that user is navigated to 'MEN -  Jeans PRODUCTS' category page          # testCase.stepdefinition.Productpagestepdef.verifyThatUserIsNavigatedToThatCategoryPage(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created account&quot;](12)" classname="runners.TestRunner" time="12.599">
+    <system-out><![CDATA[
+@registrationAndDelete @newUser
+Scenario Outline: Registering the new user and delete the created user                                 # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:19
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on Signup Login button                                                                 # testCase.stepdefinition.NewDeleteUserStepDef.clickOnSignupLoginButton()
+Automation Exercise - Signup / Login
+Login/Signup Page Visible Successfully
+  ✔ When Verify New User Signup is visible                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyNewUserSignupIsVisible()
+  ✔ And Enter name "hello", email address "r1h3l40@gmail.com"                                          # testCase.stepdefinition.NewDeleteUserStepDef.enterNameEmailAddress(java.lang.String,java.lang.String)
+  ✔ And click Signup button                                                                            # testCase.stepdefinition.NewDeleteUserStepDef.clickSignupButton()
+Text Present
+  ✔ And Verify ENTER ACCOUNT INFORMATION is visible                                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyENTERACCOUNTINFORMATIONIsVisible()
+2025-11-10T00:19:40.419862Z main ERROR Log4j API could not find a logging provider.
+  ✔ And Enter the details in the Signup form from given sheetname "RegistrationDetail" and rownumber 1 # testCase.stepdefinition.NewDeleteUserStepDef.enterTheDetailsInTheSignupFormAndClickCreateAccountButton(java.lang.String,int)
+Account Created Visible
+  ✔ And Verify ACCOUNT CREATED is visible and click Continue button                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyACCOUNTCREATEDIsVisibleAndClickContinueButton()
+Username match: hello
+  ✔ And Verify Login in as "hello" is visible                                                          # testCase.stepdefinition.NewDeleteUserStepDef.verifyLoginInAsUsernameIsVisible(java.lang.String)
+  ✔ And Click Delete Account button                                                                    # testCase.stepdefinition.NewDeleteUserStepDef.clickDeleteAccountButton()
+Account deleted! is displayed
+  ✔ Then Verify that Account Deleted is visible and click continue                                     # testCase.stepdefinition.NewDeleteUserStepDef.verify_that_account_deleted_is_visible_and_click_continue()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Registering the new user and delete the created user&quot;, &quot;Create, Verify and Delete the created account&quot;](13)" classname="runners.TestRunner" time="11.324">
+    <system-out><![CDATA[
+@registrationAndDelete @newUser
+Scenario Outline: Registering the new user and delete the created user                                 # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:20
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on Signup Login button                                                                 # testCase.stepdefinition.NewDeleteUserStepDef.clickOnSignupLoginButton()
+Automation Exercise - Signup / Login
+Login/Signup Page Visible Successfully
+  ✔ When Verify New User Signup is visible                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyNewUserSignupIsVisible()
+  ✔ And Enter name "Hi", email address "r1h3l41@gmail.com"                                             # testCase.stepdefinition.NewDeleteUserStepDef.enterNameEmailAddress(java.lang.String,java.lang.String)
+  ✔ And click Signup button                                                                            # testCase.stepdefinition.NewDeleteUserStepDef.clickSignupButton()
+Text Present
+  ✔ And Verify ENTER ACCOUNT INFORMATION is visible                                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyENTERACCOUNTINFORMATIONIsVisible()
+  ✔ And Enter the details in the Signup form from given sheetname "RegistrationDetail" and rownumber 2 # testCase.stepdefinition.NewDeleteUserStepDef.enterTheDetailsInTheSignupFormAndClickCreateAccountButton(java.lang.String,int)
+Account Created Visible
+  ✔ And Verify ACCOUNT CREATED is visible and click Continue button                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyACCOUNTCREATEDIsVisibleAndClickContinueButton()
+Username match: Hi
+  ✔ And Verify Login in as "Hi" is visible                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyLoginInAsUsernameIsVisible(java.lang.String)
+  ✔ And Click Delete Account button                                                                    # testCase.stepdefinition.NewDeleteUserStepDef.clickDeleteAccountButton()
+Account deleted! is displayed
+  ✔ Then Verify that Account Deleted is visible and click continue                                     # testCase.stepdefinition.NewDeleteUserStepDef.verify_that_account_deleted_is_visible_and_click_continue()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Register User with existing email&quot;, &quot;Create, Verify and Delete the created account&quot;](14)" classname="runners.TestRunner" time="6.712">
+    <system-out><![CDATA[
+@registrationAndDelete @duplicateEmailRegistration
+Scenario Outline: Register User with existing email                           # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:32
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Click on Signup Login button                                        # testCase.stepdefinition.NewDeleteUserStepDef.clickOnSignupLoginButton()
+Automation Exercise - Signup / Login
+Login/Signup Page Visible Successfully
+  ✔ When Verify New User Signup is visible                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyNewUserSignupIsVisible()
+  ✔ And Enter name "178" and already registered email address "178@gmail.com" # testCase.stepdefinition.NewDeleteUserStepDef.enterNameAndAlreadyRegisteredEmailAddress(java.lang.String,java.lang.String)
+  ✔ And click Signup button                                                   # testCase.stepdefinition.NewDeleteUserStepDef.clickSignupButton()
+Actual error message on page: Email Address already exist!
+Expected error message: Email Address already exist!
+  ✔ Then Verify error 'Email Address already exist!' in signup is visible     # testCase.stepdefinition.NewDeleteUserStepDef.verifyErrorEmailAddressAlreadyExistInSignupIsVisible(java.lang.String)
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:19:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;](15)" classname="runners.TestRunner" time="223.971">
+    <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -&gt; link text: View Cart]&#10;Session ID: a6fb4ddcbe0324f0026977744641f7cd" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -> link text: View Cart]
+Session ID: a6fb4ddcbe0324f0026977744641f7cd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+	at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+	at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+    <system-out><![CDATA[
+@registrationAndDelete @checkoutRegistration
+Scenario Outline: Place Order Register while Checkout                                                  # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:57
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Add products to cart                                                                         # testCase.stepdefinition.NewDeleteUserStepDef.addProductsToCart()
+  ✘ When Click cart button                                                                             # testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton()
+        org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [a6fb4ddcbe0324f0026977744641f7cd, clickElement {id=f.56B6B487979AE4D774B9B9D80D05C031.d.CA78A17E005604B1A9025B324C577B2A.e.328}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64367/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on mac (a6fb4ddcbe0324f0026977744641f7cd)] -> link text: View Cart]
+        Session ID: a6fb4ddcbe0324f0026977744641f7cd
+        	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at testCase.pages.ProductPage.clickCart(ProductPage.java:100)
+        	at testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton(NewDeleteUserStepDef.java:87)
+        	at ✽.Click cart button(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:37)
+        Caused by: java.util.concurrent.TimeoutException
+        	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+        	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+        	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+        	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+        	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        	at java.base/java.lang.Thread.run(Thread.java:1575)
+  ↷ And Verify that cart page is displayed                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyThatCartPageIsDisplayed()
+  ↷ And Click Proceed To Checkout                                                                      # testCase.stepdefinition.NewDeleteUserStepDef.clickProceedToCheckout()
+  ↷ And Click RegisterLogin button                                                                     # testCase.stepdefinition.NewDeleteUserStepDef.clickRegisterLoginButton()
+  ↷ And Enter name "hello", email address "r1h3l42@gmail.com"                                          # testCase.stepdefinition.NewDeleteUserStepDef.enterNameEmailAddress(java.lang.String,java.lang.String)
+  ↷ And click Signup button                                                                            # testCase.stepdefinition.NewDeleteUserStepDef.clickSignupButton()
+  ↷ And Enter the details in the Signup form from given sheetname "RegistrationDetail" and rownumber 1 # testCase.stepdefinition.NewDeleteUserStepDef.enterTheDetailsInTheSignupFormAndClickCreateAccountButton(java.lang.String,int)
+  ↷ And Verify ACCOUNT CREATED is visible and click Continue button                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyACCOUNTCREATEDIsVisibleAndClickContinueButton()
+  ↷ And Verify Login in as "hello" is visible                                                          # testCase.stepdefinition.NewDeleteUserStepDef.verifyLoginInAsUsernameIsVisible(java.lang.String)
+  ↷ And Click Cart button from login page                                                              # testCase.stepdefinition.NewDeleteUserStepDef.clickCartButtonFromLoginPage()
+  ↷ And Click Proceed To Checkout                                                                      # testCase.stepdefinition.NewDeleteUserStepDef.clickProceedToCheckout()
+  ↷ And Verify Address Details and Review Your Order                                                   # testCase.stepdefinition.NewDeleteUserStepDef.verifyAddressDetailsAndReviewYourOrder()
+  ↷ And Enter description in "Deliver it soon" text area and click Place Order                         # testCase.stepdefinition.NewDeleteUserStepDef.enterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)
+  ↷ And Enter payment details from given Excel Sheet "CardDetails" and rowNumber 1                     # testCase.stepdefinition.NewDeleteUserStepDef.enterPaymentDetailsFromGivenExcelSheetAndRowNumber(java.lang.String,int)
+  ↷ And Click Pay and Confirm Order button                                                             # testCase.stepdefinition.NewDeleteUserStepDef.clickPayAndConfirmOrderButton()
+  ↷ And Verify success message "Congratulations! Your order has been confirmed!"                       # testCase.stepdefinition.NewDeleteUserStepDef.verifySuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)
+  ↷ And Click Delete Account button                                                                    # testCase.stepdefinition.NewDeleteUserStepDef.clickDeleteAccountButton()
+  ↷ Then Verify that Account Deleted is visible and click continue                                     # testCase.stepdefinition.NewDeleteUserStepDef.verify_that_account_deleted_is_visible_and_click_continue()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:20:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Place Order Register while Checkout&quot;, &quot;Create, Verify and Delete the created account&quot;](16)" classname="runners.TestRunner" time="22.001">
+    <system-out><![CDATA[
+@registrationAndDelete @checkoutRegistration
+Scenario Outline: Place Order Register while Checkout                                                  # file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Test-Case-1-Register-User/src/test/java/testCase/features/registrationanddelete.feature:58
+Browser launched before scenario
+Automation Exercise
+  ✔ Given Add products to cart                                                                         # testCase.stepdefinition.NewDeleteUserStepDef.addProductsToCart()
+  ✔ When Click cart button                                                                             # testCase.stepdefinition.NewDeleteUserStepDef.clickCartButton()
+Cart page url is verified: https://www.automationexercise.com/view_cart
+  ✔ And Verify that cart page is displayed                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyThatCartPageIsDisplayed()
+  ✔ And Click Proceed To Checkout                                                                      # testCase.stepdefinition.NewDeleteUserStepDef.clickProceedToCheckout()
+  ✔ And Click RegisterLogin button                                                                     # testCase.stepdefinition.NewDeleteUserStepDef.clickRegisterLoginButton()
+  ✔ And Enter name "Hi", email address "r1h3l43@gmail.com"                                             # testCase.stepdefinition.NewDeleteUserStepDef.enterNameEmailAddress(java.lang.String,java.lang.String)
+  ✔ And click Signup button                                                                            # testCase.stepdefinition.NewDeleteUserStepDef.clickSignupButton()
+  ✔ And Enter the details in the Signup form from given sheetname "RegistrationDetail" and rownumber 2 # testCase.stepdefinition.NewDeleteUserStepDef.enterTheDetailsInTheSignupFormAndClickCreateAccountButton(java.lang.String,int)
+Account Created Visible
+  ✔ And Verify ACCOUNT CREATED is visible and click Continue button                                    # testCase.stepdefinition.NewDeleteUserStepDef.verifyACCOUNTCREATEDIsVisibleAndClickContinueButton()
+Username match: Hi
+  ✔ And Verify Login in as "Hi" is visible                                                             # testCase.stepdefinition.NewDeleteUserStepDef.verifyLoginInAsUsernameIsVisible(java.lang.String)
+  ✔ And Click Cart button from login page                                                              # testCase.stepdefinition.NewDeleteUserStepDef.clickCartButtonFromLoginPage()
+  ✔ And Click Proceed To Checkout                                                                      # testCase.stepdefinition.NewDeleteUserStepDef.clickProceedToCheckout()
+Delivery address section found.
+Delivery Address:
+YOUR DELIVERY ADDRESS
+Mr. How are
+hotmail
+1 Flat
+Floor 2nd
+WTN Dc 654321
+United States
+987654321
+Billing address section found.
+Billing Address:
+YOUR BILLING ADDRESS
+Mr. How are
+hotmail
+1 Flat
+Floor 2nd
+WTN Dc 654321
+United States
+987654321
+📦 Order Items:
+💰 Total Amount: Rs. 500
+Address details and Order details are verified.
+  ✔ And Verify Address Details and Review Your Order                                                   # testCase.stepdefinition.NewDeleteUserStepDef.verifyAddressDetailsAndReviewYourOrder()
+  ✔ And Enter description in "deliver it soon" text area and click Place Order                         # testCase.stepdefinition.NewDeleteUserStepDef.enterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)
+  ✔ And Enter payment details from given Excel Sheet "CardDetails" and rowNumber 2                     # testCase.stepdefinition.NewDeleteUserStepDef.enterPaymentDetailsFromGivenExcelSheetAndRowNumber(java.lang.String,int)
+  ✔ And Click Pay and Confirm Order button                                                             # testCase.stepdefinition.NewDeleteUserStepDef.clickPayAndConfirmOrderButton()
+Order placed message verified successfully!
+  ✔ And Verify success message "Congratulations! Your order has been confirmed!"                       # testCase.stepdefinition.NewDeleteUserStepDef.verifySuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)
+  ✔ And Click Delete Account button                                                                    # testCase.stepdefinition.NewDeleteUserStepDef.clickDeleteAccountButton()
+Account deleted! is displayed
+  ✔ Then Verify that Account Deleted is visible and click continue                                     # testCase.stepdefinition.NewDeleteUserStepDef.verify_that_account_deleted_is_visible_and_click_continue()
+Browser closed after scenario
+]]></system-out>
+    <system-err><![CDATA[Nov 10, 2025 12:23:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
 </testsuite>

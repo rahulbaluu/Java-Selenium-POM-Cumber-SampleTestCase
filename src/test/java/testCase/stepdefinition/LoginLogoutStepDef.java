@@ -4,27 +4,17 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import testCase.pages.HomePage;
 import testCase.pages.LoginPage;
 import testCase.pages.SignupLoginPage;
 import utilities.DriverSetup;
 
-public class LoginLogoutStepDef {
-	WebDriver driver;
-	HomePage homePage;
-	SignupLoginPage signupPage;
-	LoginPage loginPage;
+public class LoginLogoutStepDef extends BaseStepDef {
+
 	String loginUsername;
 	String loginPassword;
 
-	public LoginLogoutStepDef() {
-		this.driver = DriverSetup.getDriver();
-		this.homePage = new HomePage(driver);
-		this.signupPage = new SignupLoginPage(driver);
-		this.loginPage = new LoginPage(driver);
-	}
 
 	@Given("Click Signup Login button")
 	public void clickSignupLoginButton() {

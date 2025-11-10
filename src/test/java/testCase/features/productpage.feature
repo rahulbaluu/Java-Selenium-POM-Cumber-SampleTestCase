@@ -1,6 +1,7 @@
-# Created by rahulbalashanmugam at 21/10/2025
+@product
 Feature: Listing and Searching of Product
 
+  @allProduct
   Scenario: Verify All Products and product detail page
     Given Click on products button
     When Verify user is navigated to All Products page successfully
@@ -9,6 +10,7 @@ Feature: Listing and Searching of Product
     And User is landed to product detail page
     Then Verify that detail detail is visible
 
+  @searchProduct
   Scenario Outline: Verify searched product is listed
     Given Click on products button
     When Verify user is navigated to All Products page successfully
@@ -21,6 +23,7 @@ Feature: Listing and Searching of Product
     | Winter Top                  |
     | Sleeves Printed Top - White |
 
+  @categoryNavigation
   Scenario Outline: Verify navigation to different category and sub-category pages
     Given Click on products button
     When Verify that categories are visible on left side bar
@@ -32,7 +35,7 @@ Feature: Listing and Searching of Product
 
   Examples:
     | mainCategory | subCategory | expectedCategoryText   | subCategory2 | mainCategory2 | expectedCategoryText2 |
-    | Women        | Tops        | WOMEN -  Tops Products | Jeans        | Men           | MEN -  Jeans PRODUCTS  |
+    | Women        | Tops        | WOMEN -  Tops Products | Jeans        | Men           | MEN -  Jeans PRODUCTS |
 
 
 

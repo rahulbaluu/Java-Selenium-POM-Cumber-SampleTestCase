@@ -1,5 +1,7 @@
 package testCase.pages;
 
+import constant.RegistrationPageConstant;
+import constant.WaitTimeConstant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,9 +18,9 @@ public class RegistrationPage extends BasePage {
 	}
 
 	public void verifyTheTextPresent(){
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 		String expectedText = "ENTER ACCOUNT INFORMATION";
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[@class='title text-center']")));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(RegistrationPageConstant.expectedText)));
 		if(element.isDisplayed() && element.getText().equals(expectedText)){
 			System.out.println("Text Present");
 		}
@@ -27,55 +29,56 @@ public class RegistrationPage extends BasePage {
 		}
 	}
 
-	public void fillRegistrationForm(String password, String firstName, String lastName, String company,
+	public void fillRegistrationForm(String password, String first, String last, String company,
 									 String address1, String address2, String country, String state,
-									 String city, String zipcode, String mobileNumber,
+									 String city, String zip, String mobile,
 									 String date, String month, String year) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		//Scroll to and click gender radio button
-		WebElement genderRadio = driver.findElement(By.id("id_gender1"));
+		WebElement genderRadio = driver.findElement(By.id(RegistrationPageConstant.genderrRadioButton));
 		js.executeScript("arguments[0].scrollIntoView(true);", genderRadio);
 		genderRadio.click();
 
 		//Password
-		driver.findElement(By.id("password")).sendKeys(password);
+		driver.findElement(By.id(RegistrationPageConstant.password)).sendKeys(password);
 
 		//Selecting the dropdown
-		WebElement DayDropdown = driver.findElement(By.id("days"));
+		WebElement DayDropdown = driver.findElement(By.id(RegistrationPageConstant.dayDropDown));
 		js.executeScript("arguments[0].scrollIntoView(true);", DayDropdown);
 		Select Daydropdown = new Select(DayDropdown);
 		Daydropdown.selectByValue(date);
 
-		WebElement MonthDropdown = driver.findElement(By.id("months"));
+		WebElement MonthDropdown = driver.findElement(By.id(RegistrationPageConstant.monthDropDown));
 		Select Monthdropdown = new Select(MonthDropdown);
 		Monthdropdown.selectByValue(month);
 
-		WebElement YearDropdown = driver.findElement(By.id("years"));
+		WebElement YearDropdown = driver.findElement(By.id(RegistrationPageConstant.yearDropDown));
 		Select Yeardropdown = new Select(YearDropdown);
 		Yeardropdown.selectByValue(year);
 
-		driver.findElement(By.id("newsletter")).click();
-		driver.findElement(By.id("optin")).click();
-		driver.findElement(By.id("first_name")).sendKeys(firstName);
-		driver.findElement(By.id("last_name")).sendKeys(lastName);
-		driver.findElement(By.id("company")).sendKeys(company);
-		driver.findElement(By.id("address1")).sendKeys(address1);
-		driver.findElement(By.id("address2")).sendKeys(address2);
-		driver.findElement(By.id("country")).sendKeys(country);
-		driver.findElement(By.id("state")).sendKeys(state);
-		driver.findElement(By.id("city")).sendKeys(city);
-		driver.findElement(By.id("zipcode")).sendKeys(zipcode);
-		driver.findElement(By.id("mobile_number")).sendKeys(mobileNumber);
-		driver.findElement(By.cssSelector("button[type='submit']")).click();
+		driver.findElement(By.id(RegistrationPageConstant.newsLetter)).click();
+		driver.findElement(By.id(RegistrationPageConstant.optionalCheckBox)).click();
+		driver.findElement(By.id(RegistrationPageConstant.firstName)).sendKeys(first);
+		driver.findElement(By.id(RegistrationPageConstant.lastName)).sendKeys(last);
+		driver.findElement(By.id(RegistrationPageConstant.companyName)).sendKeys(company);
+		driver.findElement(By.id(RegistrationPageConstant.address1)).sendKeys(address1);
+		driver.findElement(By.id(RegistrationPageConstant.address2)).sendKeys(address2);
+		driver.findElement(By.id(RegistrationPageConstant.country)).sendKeys(country);
+		driver.findElement(By.id(RegistrationPageConstant.state)).sendKeys(state);
+		driver.findElement(By.id(RegistrationPageConstant.city)).sendKeys(city);
+		driver.findElement(By.id(RegistrationPageConstant.zipcode)).sendKeys(zip);
+		driver.findElement(By.id(RegistrationPageConstant.mobileNumber)).sendKeys(mobile);
+
+		WebElement elementDriver = driver.findElement(By.cssSelector(RegistrationPageConstant.registrationSubmitButton));
+		elementDriver.click();
 	}
 
 	public void verifyTheTextAccountCreated() {
 		String ExpectedText = "ACCOUNT CREATED!";
-		WebElement element = driver.findElement(By.cssSelector("h2[data-qa='account-created']"));
+		WebElement element = driver.findElement(By.cssSelector(RegistrationPageConstant.accountCreatedMessage));
 		if(element.isDisplayed() && element.getText().equals(ExpectedText)){
 			System.out.println("Account Created Visible");
-			driver.findElement(By.linkText("Continue")).click();
+			driver.findElement(By.linkText(RegistrationPageConstant.accountCreatedContinueButton)).click();
 		}
 		else{
 			System.out.println("Account Created Visible");

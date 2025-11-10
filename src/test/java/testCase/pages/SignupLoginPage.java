@@ -1,5 +1,7 @@
 package testCase.pages;
 
+import constant.SignupLoginPageConstant;
+import constant.WaitTimeConstant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,41 +26,41 @@ public class SignupLoginPage extends BasePage {
 	}
 
 	public void enterTheNameEmailInSignupTextBox(String username, String email) {
-		driver.findElement(By.cssSelector("input[type='text']")).sendKeys(username);
-		driver.findElement(By.cssSelector("input[data-qa='signup-email']")).sendKeys(email);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupUserName)).sendKeys(username);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupEmail)).sendKeys(email);
 	}
 
 	public void clickSignupButton() {
-		driver.findElement(By.cssSelector("button[data-qa='signup-button']")).click();
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupButton)).click();
 	}
 
 	public void enterTheEmailAndPasswordInLoginTextBox(String email, String password) {
-		driver.findElement(By.cssSelector("input[data-qa='login-email']")).sendKeys(email);
-		driver.findElement(By.cssSelector("input[data-qa='login-password']")).sendKeys(password);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginEmail)).sendKeys(email);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginPassword)).sendKeys(password);
 	}
 
 	public void enterTheIncorrectEmailAndPasswordInLoginTextBox(String email, String password) {
-		driver.findElement(By.cssSelector("input[data-qa='login-email']")).sendKeys(email);
-		driver.findElement(By.cssSelector("input[data-qa='login-password']")).sendKeys(password);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginEmail)).sendKeys(email);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginPassword)).sendKeys(password);
 	}
 
 	public String getErrorMessage() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 		WebElement errorMessageElement = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(
-						By.xpath("//p[text()='Your email or password is incorrect!']")));
+						By.xpath(SignupLoginPageConstant.loginErrorMessageElement)));
 		return errorMessageElement.getText();
 	}
 
 	public String getErrorMessageSignup() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 		WebElement errorMessageElement = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(
-						By.xpath("//p[text()='Email Address already exist!']")));
+						By.xpath(SignupLoginPageConstant.existingLoginEmailErrorMessageElement)));
 		return errorMessageElement.getText();
 	}
 
 	public void clickLoginButton() {
-		driver.findElement(By.cssSelector("button[data-qa='login-button']")).click();
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginButton)).click();
 	}
 }

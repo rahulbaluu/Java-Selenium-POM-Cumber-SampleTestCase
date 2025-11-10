@@ -4,22 +4,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import testCase.pages.*;
-import utilities.DriverSetup;
 
 
-public class CartStepDef {
-	private WebDriver driver;
-	private ProductPage productPage;
-	private CartPage cartPage;
+public class CartStepDef extends BaseStepDef{
+
 	String emailAddress;
-
-	public CartStepDef() {
-		this.driver = DriverSetup.getDriver();
-		this.productPage = new ProductPage(driver);
-		this.cartPage = new CartPage(driver);
-	}
 
 	@Given("Click Cart button")
 	public void clickCartButton() {

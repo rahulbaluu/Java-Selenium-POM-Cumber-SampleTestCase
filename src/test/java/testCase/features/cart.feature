@@ -1,6 +1,7 @@
-# Created by rahulbalashanmugam at 22/10/2025
+@cart
 Feature: Testing the functions in cart
 
+  @subscription
   Scenario Outline: Verify Subscription in Cart page
    Given Click Cart button
     When Scroll down to footer
@@ -12,6 +13,7 @@ Feature: Testing the functions in cart
      | Subscription | email     |
      | SUBSCRIPTION | 178@gmail |
 
+  @addProductInCart
   Scenario: Add Products in Cart
     Given Click products button
     When Hover over first product and click add to cart
@@ -21,7 +23,7 @@ Feature: Testing the functions in cart
     And Verify both products are added to Cart
     Then Verify their prices, quantity and total price
 
-
+  @increaseQuantity
   Scenario Outline: Verify Product quantity in Cart
     Given Click view Product for any product on home page
     When Verify product detail is opened
@@ -33,6 +35,7 @@ Feature: Testing the functions in cart
     | reqQuantity |
     | 4           |
 
+  @removeProduct
   Scenario: Remove Products From Cart
     Given Click products button
     When Hover over first product and click add to cart
