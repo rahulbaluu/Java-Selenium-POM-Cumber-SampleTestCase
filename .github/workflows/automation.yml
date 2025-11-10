@@ -23,16 +23,8 @@ jobs:
 
     - name: Install Google Chrome
       run: |
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -f install -y
-
-    - name: Install ChromeDriver
-      run: |
-        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+')
-        wget https://chromedriver.storage.googleapis.com/$CHROME_VERSION/chromedriver_linux64.zip
-        unzip chromedriver_linux64.zip
-        sudo mv chromedriver /usr/local/bin/
-        sudo chmod +x /usr/local/bin/chromedriver
+        sudo apt update
+        sudo apt install -y google-chrome-stable
 
     - name: Cache Maven dependencies
       uses: actions/cache@v3
@@ -40,8 +32,5 @@ jobs:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
 
-    - name: Build with Maven
-      run: mvn clean compile
-
-    - name: Run Cucumber Tests
-      run: mvn test
+    - name: Build and Run Tests
+      run: mvn clean test
