@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty", "json:target/cucumber.json", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
 		//"pretty" prints a readable format in the console
 		//"html:target/cucumber-reports.html" Generates an HTML report in the target folder
-		monochrome = true
+		monochrome = true,
 		//"true" makes console output readable(no extra special characters)
 		//"false" keeps colored output (less readable in some consoles)
 		tags = "@product"
