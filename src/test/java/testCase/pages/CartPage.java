@@ -11,7 +11,6 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
-
 import static org.testng.Assert.assertTrue;
 
 public class CartPage extends BasePage {
