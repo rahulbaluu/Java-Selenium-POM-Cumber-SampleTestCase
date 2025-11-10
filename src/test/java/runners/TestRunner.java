@@ -18,7 +18,6 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true,
 		//"true" makes console output readable(no extra special characters)
 		//"false" keeps colored output (less readable in some consoles)
-		tags = "@product"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 	//"extends AbstractTestNGCucumberTests" Allows this class to run all scenarios defined in feature files using TestNG
