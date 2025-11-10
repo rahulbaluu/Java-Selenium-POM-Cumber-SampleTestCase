@@ -11,7 +11,10 @@ public class DriverSetup {
 	public static WebDriver getDriver() {
 		if (driver == null) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+			options.addArguments("--headless=new"); // or "--headless=chrome" depending on version
+			options.addArguments("--window-size=1920,1080"); // ensure elements are visible
+			options.addArguments("--disable-gpu");
+			options.addArguments("--no-sandbox");
 			driver = new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
