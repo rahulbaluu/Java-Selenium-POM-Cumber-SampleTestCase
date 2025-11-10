@@ -10,8 +10,8 @@ public class DriverSetup {
 	private static WebDriver driver;
 	public static WebDriver getDriver() {
 		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver", "/Users/rahulbalashanmugam/Downloads/chromedriver-mac-arm64/chromedriver");
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 			driver = new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
