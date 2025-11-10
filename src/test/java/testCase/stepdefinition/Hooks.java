@@ -22,9 +22,9 @@ public class Hooks extends BaseStepDef {
 		basePage.navigateTo(URLConstant.baseurl);
 		System.out.println("Browser launched before scenario");
 		System.out.println(driver.getTitle());
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
-		WebElement consentURL = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(URLConstant.constantButton)));
-		consentURL.click();
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
+		//WebElement consentURL = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(URLConstant.constantButton)));
+		//consentURL.click();
 	}
 
 	@After
