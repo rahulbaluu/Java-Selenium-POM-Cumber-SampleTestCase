@@ -25,6 +25,7 @@ public class Hooks extends BaseStepDef {
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
 		//WebElement consentURL = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(URLConstant.constantButton)));
 		//consentURL.click();
+		//While executing in the GitHubAction their will not be any pop-up message or add will not be displayed
 	}
 
 	@After
